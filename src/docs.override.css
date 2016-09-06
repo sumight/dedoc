@@ -1,0 +1,57 @@
+.bs-example-wrapper .bs-code .highlight, .bs-example{
+    margin-bottom: 0;
+}
+.highlight{
+    border-top: 0;
+    border-radius: 0;
+}
+
+.bs-code {
+    max-height: 500px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.highlight {
+    position: relative;
+}
+
+.highlight.bs-lang-html::after {
+    content: "HTML"
+}
+.highlight.bs-lang-js::after {
+    content: "JS"
+}
+
+.highlight::after{
+    display: block;
+    position: absolute;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #777;
+    background-color: #fff;
+    border: 1px solid #e1e1e8;
+    border-radius: 0 4px 0 4px;
+    top: 0;
+    right: 0;
+}
+
+.bs-code {
+    position: relative;
+}
+
+.bs-btn-show-code {
+    padding: 5px 10px;
+    float: right;
+    color: #428bca;
+    text-decoration: none;
+}
+
+.bs-example-wrapper code {
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+.bs-example-wrapper {
+    margin-bottom: 50px;
+}

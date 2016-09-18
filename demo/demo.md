@@ -23,4 +23,4 @@
 </example>
 
 <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="build/dedo.js"></script>
+<script type="text/javascript" src="http://localhost:4000/dedoc.js"></script>

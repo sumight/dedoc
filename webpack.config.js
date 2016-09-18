@@ -6,7 +6,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'dedo.js'
+        filename: 'dedoc.js'
     },
     module: {
         loaders: [{

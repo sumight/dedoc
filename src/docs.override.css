@@ -8,7 +8,8 @@
 
 .bs-code {
     max-height: 500px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     display: none;
 }
 
@@ -54,4 +55,13 @@
 
 .bs-example-wrapper {
     margin-bottom: 50px;
+}
+
+.highlight pre code:first-child {
+    padding-right: 0.5em;
+}
+
+.bs-example iframe {
+    width: 100%;
+    border: none;
 }

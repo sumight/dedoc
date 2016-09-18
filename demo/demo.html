@@ -13,7 +13,7 @@
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     </template>
     <example>
-        <template>
+        <template height='300'>
             <button type="button" class="btn btn-primary btn-lg js-modal">Launch demo modal</button>
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -39,7 +39,6 @@
         </template>
         <script type="text/javascript" src>
             $('.js-modal').on('click', function(){
-                alert('sss');
                 $('#myModal').modal();
             })
         </script>

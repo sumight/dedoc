@@ -14,8 +14,8 @@ A library for generate demo in html quickly, also supports markdown。Unfortunat
 
     <!-- An example that you want to show -->
     <example>
-        <!-- The html -->
-        <template>
+        <!-- The html , you can set the height of viewport -->
+        <template height="300"> 
             <button type="button" class="btn btn-primary btn-lg js-modal">Launch demo modal</button>
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 ...

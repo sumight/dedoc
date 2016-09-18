@@ -28,14 +28,6 @@ function openCode() {
     $codeArea.slideToggle();
 }
 
-function createIframe(parent, content) {
-    content = content.replace(/\n/g, '');
-    var iframe = document.createElement('iframe');
-    parent.appendChild(iframe);
-    iframe.contentWindow.document.body.innerHTML = content;
-    iframe.style.width = '100%';
-}
-
 function renderExample($example) {
 
     var $examplePost = $(template());
@@ -49,6 +41,10 @@ function renderExample($example) {
     // 向iframe 中注入组件
     var iframe = document.createElement('iframe');
     $examplePost.find('.bs-example')[0].appendChild(iframe);
+    // 设置demo的高度
+    var templateH = $example.find('template').not('.imports').attr('height');
+    iframe.height = templateH;
+
 
     // 执行 html
     if (_.isString(htmlStr)) {
@@ -57,7 +53,6 @@ function renderExample($example) {
     // 执行 lib 资源引入
     var scriptCount = 0; // 用来统计脚本是否全部加载完毕
     var $imports = $($example.find('.imports').html()).add($('.global-imports').html());
-    console.log($imports);
     $imports.filter('script').each(function() {
         var document = iframe.contentWindow.document;
         var script = document.createElement('script');
